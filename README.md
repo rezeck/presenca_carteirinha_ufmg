@@ -29,6 +29,15 @@ datasheets are in [`docs/`](docs/) (schematic images in `docs/schematic/`).
   on battery it must be pressed to boot.
 - **No RTC:** session dates are chosen with a calendar picker.
 
+## Firmware update (USB)
+
+Web installer (Chrome / Edge, Web Serial):
+**[h3ct0r.github.io/presenca_carteirinha_ufmg](https://h3ct0r.github.io/presenca_carteirinha_ufmg/)**
+
+Tag `v*` → GitHub Release with `rfid-attendance-<tag>-firmware.bin` → Pages
+syncs the bins for same-origin download. See
+[`docs/flasher/DEPLOY.md`](docs/flasher/DEPLOY.md).
+
 ## Build & test
 
 ```sh
@@ -82,6 +91,7 @@ A sample card layout is in [`docs/software/sd_card_example/`](docs/software/sd_c
 
 ## Documentation
 
+- [`docs/flasher/`](docs/flasher/) — browser USB firmware installer (GitHub Pages).
 - [`docs/software/PROJECT_HANDOFF.md`](docs/software/PROJECT_HANDOFF.md) — architecture, screens,
   data model, gotchas, and the current backlog (start here to continue work).
 - [`docs/software/EXPORT.md`](docs/software/EXPORT.md) — the CSV attendance export feature.
